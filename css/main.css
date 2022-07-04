@@ -188,17 +188,22 @@ header {
 	padding: 0;
 }
 
+.link-top-item{
+	display: flex;
+}
+
 .link-top-item:not(:last-child) {
 	margin-right: 50px;
 }
 
-.link-top {
-	display: flex;
+.icon-address{
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	fill: var(--links-color-header);
 }
 
-.link-top:hover,
-.link-top:focus {
-	color: var(--accent-color);
+
 }
 
 .address-top {
@@ -207,6 +212,7 @@ header {
 }
 
 .link-top {
+	display: flex;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -216,9 +222,23 @@ header {
 	color: var(--links-color-header);
 }
 
+.link-top:hover{
+	color: var(--accent-color);
+}
+
+.icon-address:hover{
+	fill: var(--accent-color);
+	}
+.link-top {
+
+}
+
+
 /* Slogan */
 .slogan {
-	background-color: var(--bg-color-slogan);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image-logo.jpg);
+	background-size: cover;
+	background-position: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -276,6 +296,22 @@ header {
 
 .achiev-item {
 	width: 250px;
+}
+
+.achiev-space{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	background-color: var(--bg-color-secondary);
+	border-radius: 4px;
+	height: 120px
+}
+
+.achiev-icon{
+	width: 70px;
+	height: 70px;
+	position: ;
 }
 
 .achiev-title {
@@ -381,6 +417,22 @@ header {
 	letter-spacing: 0.03em;
 
 	color: var(--color-description);
+}
+
+.team-list-icon{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+	padding-top: 16px;
+}
+
+.unit-item-icon{
+
+}
+
+.unit-icon {
+	width: 20px;
+	height: 20px;
 }
 
 /* Portfolio */
@@ -516,4 +568,8 @@ footer {
 .link-map {
 	margin-top: 20px;
 	color: var(--color-light);
+}
+
+.footer-social-icons{
+	width: fit-content;
 }
