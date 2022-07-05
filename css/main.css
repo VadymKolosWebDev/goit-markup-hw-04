@@ -78,6 +78,11 @@ button {
 	padding: 0 15px;
 }
 
+.section{
+	margin-top: 94px;
+	margin-bottom: 94px;
+}
+
 .invisible {
 	position: absolute;
 	width: 1px;
@@ -203,9 +208,6 @@ header {
 	fill: var(--links-color-header);
 }
 
-
-}
-
 .address-top {
 	display: flex;
 	flex-direction: flex-end;
@@ -226,13 +228,10 @@ header {
 	color: var(--accent-color);
 }
 
-.icon-address:hover{
+.link-top:hover .icon-address{
+
 	fill: var(--accent-color);
-	}
-.link-top {
-
 }
-
 
 /* Slogan */
 .slogan {
@@ -311,7 +310,6 @@ header {
 .achiev-icon{
 	width: 70px;
 	height: 70px;
-	position: ;
 }
 
 .achiev-title {
@@ -426,13 +424,50 @@ header {
 	padding-top: 16px;
 }
 
-.unit-item-icon{
-
-}
-
 .unit-icon {
 	width: 20px;
 	height: 20px;
+}
+
+.customer-part-title{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-bottom: 50px;
+}
+
+.customer-list{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.customer-space{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+}
+
+.customer-space:hover{
+	border-color: var(--accent-color);
+}
+
+.customer-icon {
+	width: 106px;
+	height: 60px;
+	fill: #afb1b8;
+}
+
+.customer-space:hover .customer-icon{
+	fill: var(--accent-color);
 }
 
 /* Portfolio */
@@ -538,6 +573,12 @@ footer {
 	background: var(--bg-color-footer);
 }
 
+.container
+
+.footer-column{
+	display: flex
+}
+
 .logo-footer {
 	margin-bottom: 20px;
 }
@@ -545,6 +586,8 @@ footer {
 .logo-bottom {
 	color: var(--logo-color-bottom);
 }
+
+
 
 .address-bottom-list {
 	margin: 0;
@@ -572,4 +615,15 @@ footer {
 
 .footer-social-icons{
 	width: fit-content;
+}
+
+.footer-icons-title{
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+
+	color: var(--color-light);
 }
