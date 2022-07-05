@@ -661,6 +661,11 @@ footer {
 	color: var(--color-light);
 }
 
+.link-social{
+	display: flex;
+	align-items: center;
+}
+
 .footer-list-icon {
 	display: flex;
 	padding: 0;
