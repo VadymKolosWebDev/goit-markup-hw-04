@@ -78,7 +78,7 @@ button {
 	padding: 0 15px;
 }
 
-.section{
+.section {
 	margin-top: 94px;
 	margin-bottom: 94px;
 }
@@ -193,7 +193,7 @@ header {
 	padding: 0;
 }
 
-.link-top-item{
+.link-top-item {
 	display: flex;
 }
 
@@ -201,7 +201,7 @@ header {
 	margin-right: 50px;
 }
 
-.icon-address{
+.icon-address {
 	width: 16px;
 	height: 16px;
 	margin-right: 10px;
@@ -224,18 +224,19 @@ header {
 	color: var(--links-color-header);
 }
 
-.link-top:hover{
+.link-top:hover {
 	color: var(--accent-color);
 }
 
-.link-top:hover .icon-address{
-
+.link-top:hover .icon-address {
 	fill: var(--accent-color);
 }
 
 /* Slogan */
 .slogan {
-	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image-logo.jpg);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/bg-image-logo.jpg);
+	max-width: 1600px;
 	background-size: cover;
 	background-position: center;
 	padding-top: 200px;
@@ -297,17 +298,17 @@ header {
 	width: 250px;
 }
 
-.achiev-space{
+.achiev-space {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
 	background-color: var(--bg-color-secondary);
 	border-radius: 4px;
-	height: 120px
+	height: 120px;
 }
 
-.achiev-icon{
+.achiev-icon {
 	width: 70px;
 	height: 70px;
 }
@@ -390,7 +391,7 @@ header {
 }
 
 .unit-text {
-	padding: 30px 60px;
+	padding: 30px 32px;
 }
 
 .unit-title {
@@ -417,19 +418,40 @@ header {
 	color: var(--color-description);
 }
 
-.team-list-icon{
+.team-list-icon {
+	padding: 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-between;
-	padding-left: 0;
 	padding-top: 16px;
+}
+
+.team-item-icon{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+
+.team-item-icon:hover{
+	background-color: var(--accent-color);
 }
 
 .unit-icon {
 	width: 20px;
 	height: 20px;
+	fill: #afb1b8;
 }
 
-.customer-part-title{
+.team-item-icon:hover .unit-icon{
+	fill: var(--bg-color-cards);
+}
+
+.customer-part-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -438,25 +460,25 @@ header {
 	margin-bottom: 50px;
 }
 
-.customer-list{
+.customer-list {
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
 	margin: 0;
 }
 
-.customer-space{
+.customer-space {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 170px;
 	height: 92px;
 
-	border: 1px solid #AFB1B8;
+	border: 1px solid #afb1b8;
 	border-radius: 4px;
 }
 
-.customer-space:hover{
+.customer-space:hover {
 	border-color: var(--accent-color);
 }
 
@@ -466,7 +488,7 @@ header {
 	fill: #afb1b8;
 }
 
-.customer-space:hover .customer-icon{
+.customer-space:hover .customer-icon {
 	fill: var(--accent-color);
 }
 
@@ -573,9 +595,13 @@ footer {
 	background: var(--bg-color-footer);
 }
 
-.container
+.footer-wrapper {
+	display: flex;
+}
 
-
+.footer-column:not(:last-child) {
+	margin-right: 70px;
+}
 
 .logo-footer {
 	margin-bottom: 20px;
@@ -585,11 +611,13 @@ footer {
 	color: var(--logo-color-bottom);
 }
 
-
-
 .address-bottom-list {
 	margin: 0;
 	padding: 0;
+}
+
+.link-bottom-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 .link-bottom {
@@ -602,8 +630,8 @@ footer {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.link-bottom-item:not(:last-child) {
-	margin-bottom: 9px;
+.link-bottom:hover {
+	color: var(--accent-color);
 }
 
 .link-map {
@@ -611,9 +639,13 @@ footer {
 	color: var(--color-light);
 }
 
+.column-second {
+	margin-top: 12px;
+}
 
+.footer-icons-title {
+	/* margin-top: 20px; */
 
-.footer-icons-title{
 	text-transform: uppercase;
 	font-style: normal;
 	font-weight: 700;
@@ -622,4 +654,32 @@ footer {
 	letter-spacing: 0.03em;
 
 	color: var(--color-light);
+}
+
+.footer-list-icon {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.item-icon-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.item-icon-footer:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer-icon {
+	fill: var(--bg-color-header);
+}
+
+.item-icon-footer:hover {
+	background-color: var(--accent-color);
 }
