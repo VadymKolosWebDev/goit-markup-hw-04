@@ -575,9 +575,7 @@ footer {
 
 .container
 
-.footer-column{
-	display: flex
-}
+
 
 .logo-footer {
 	margin-bottom: 20px;
@@ -613,9 +611,7 @@ footer {
 	color: var(--color-light);
 }
 
-.footer-social-icons{
-	width: fit-content;
-}
+
 
 .footer-icons-title{
 	text-transform: uppercase;
