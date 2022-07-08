@@ -640,7 +640,8 @@ footer {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.link-bottom:hover {
+.link-bottom:hover,
+.link-bottom:focus {
 	color: var(--accent-color);
 }
 
@@ -677,7 +678,7 @@ footer {
 	margin: 0;
 }
 
-.item-icon-footer {
+.icon-link-footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -691,10 +692,17 @@ footer {
 	margin-right: 10px;
 }
 
+.icon-link-footer:hover,
+.icon-link-footer:focus{
+	background: var(--accent-color);
+}
+
+.icon-link-footer{
+	display: flex;
+
+}
+
 .footer-icon {
 	fill: var(--bg-color-header);
 }
 
-.item-icon-footer:hover, .item-icon-footer:focus{
-	background-color: var(--accent-color);
-}
