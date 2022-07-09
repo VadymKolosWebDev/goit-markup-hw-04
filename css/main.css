@@ -99,6 +99,7 @@ button {
 /* Header */
 header {
 	background: var(--bg-color-header);
+	background-position: center;
 	border-bottom: 1px solid var(--border-top-header);
 	padding: 25px 0;
 	margin: auto 0;
@@ -326,6 +327,7 @@ header {
 }
 
 .achiev-description {
+	margin: 0;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
@@ -387,7 +389,10 @@ header {
 
 .team-card {
 	background: var(--bg-color-cards);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 
+		0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -423,6 +428,19 @@ header {
 	color: var(--color-description);
 }
 
+.unit-social-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+
+.unit-social-link:hover,
+.unit-social-link:focus{
+	background-color: var(--accent-color);
+}
 .team-list-icon {
 	padding: 0;
 	margin: 0;
@@ -435,16 +453,12 @@ header {
 	padding: 0;
 	margin: 0;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
+
 }
 
-.team-item-icon:hover{
+/* .team-item-icon:hover{
 	background-color: var(--accent-color);
-}
+} */
 
 .unit-icon {
 	width: 20px;
@@ -452,10 +466,23 @@ header {
 	fill: #afb1b8;
 }
 
-.team-item-icon:hover .unit-icon{
+
+.unit-social-link:hover .unit-icon,
+.unit-social-link:focus .unit-icon{
 	fill: var(--bg-color-cards);
 }
 
+/* .team-item-icon:hover .unit-icon,
+.team-item-icon:focus .unit-icon{
+	fill: var(--bg-color-cards);
+} */
+
+
+/* .team-item-icon:focus .unit-icon{
+	fill: var(--bg-color-cards);
+} */
+
+/* Custome */
 .customer-part-title {
 	font-weight: 700;
 	font-size: 36px;
