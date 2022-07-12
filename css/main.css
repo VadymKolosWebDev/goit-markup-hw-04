@@ -66,6 +66,7 @@ ul {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	outline: none;
 }
 
 button {
@@ -450,15 +451,8 @@ header {
 }
 
 .team-item-icon{
-	padding: 0;
-	margin: 0;
 	display: flex;
-
 }
-
-/* .team-item-icon:hover{
-	background-color: var(--accent-color);
-} */
 
 .unit-icon {
 	width: 20px;
@@ -466,23 +460,12 @@ header {
 	fill: #afb1b8;
 }
 
-
 .unit-social-link:hover .unit-icon,
 .unit-social-link:focus .unit-icon{
 	fill: var(--bg-color-cards);
 }
 
-/* .team-item-icon:hover .unit-icon,
-.team-item-icon:focus .unit-icon{
-	fill: var(--bg-color-cards);
-} */
-
-
-/* .team-item-icon:focus .unit-icon{
-	fill: var(--bg-color-cards);
-} */
-
-/* Custome */
+/* Customers */
 .customer-part-title {
 	font-weight: 700;
 	font-size: 36px;
@@ -499,7 +482,7 @@ header {
 	margin: 0;
 }
 
-.customer-space {
+.customer-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -510,8 +493,10 @@ header {
 	border-radius: 4px;
 }
 
-.customer-space:hover {
+.customer-link:hover,
+.customer-link:focus {
 	border-color: var(--accent-color);
+	/* outline: none; */
 }
 
 .customer-icon {
@@ -520,8 +505,10 @@ header {
 	fill: #afb1b8;
 }
 
-.customer-space:hover .customer-icon {
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
 	fill: var(--accent-color);
+
 }
 
 /* Portfolio */
