@@ -226,8 +226,8 @@ header {
 	color: var(--links-color-header);
 }
 
-	.link-top:hover,
-	.link-top:focus{
+.link-top:hover,
+.link-top:focus {
 	color: var(--accent-color);
 }
 
@@ -390,10 +390,7 @@ header {
 
 .team-card {
 	background: var(--bg-color-cards);
-	box-shadow: 
-		0px 1px 3px rgba(0, 0, 0, 0.12),
-		0px 1px 1px rgba(0, 0, 0, 0.14),
-		0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -429,7 +426,7 @@ header {
 	color: var(--color-description);
 }
 
-.unit-social-link{
+.unit-social-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -439,7 +436,7 @@ header {
 }
 
 .unit-social-link:hover,
-.unit-social-link:focus{
+.unit-social-link:focus {
 	background-color: var(--accent-color);
 }
 .team-list-icon {
@@ -450,7 +447,7 @@ header {
 	padding-top: 16px;
 }
 
-.team-item-icon{
+.team-item-icon {
 	display: flex;
 }
 
@@ -461,7 +458,7 @@ header {
 }
 
 .unit-social-link:hover .unit-icon,
-.unit-social-link:focus .unit-icon{
+.unit-social-link:focus .unit-icon {
 	fill: var(--bg-color-cards);
 }
 
@@ -508,7 +505,6 @@ header {
 .customer-link:hover .customer-icon,
 .customer-link:focus .customer-icon {
 	fill: var(--accent-color);
-
 }
 
 /* Portfolio */
@@ -576,9 +572,9 @@ header {
 	margin-bottom: 30px;
 }
 
-.filter-card-item:hover{
-	border: 1px solid #EEEEEE;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.filter-card-item:hover {
+	border: 1px solid #eeeeee;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-img {
@@ -681,7 +677,7 @@ footer {
 	color: var(--color-light);
 }
 
-.link-social{
+.link-social {
 	display: flex;
 	align-items: center;
 }
@@ -707,16 +703,14 @@ footer {
 }
 
 .icon-link-footer:hover,
-.icon-link-footer:focus{
+.icon-link-footer:focus {
 	background: var(--accent-color);
 }
 
-.icon-link-footer{
+.icon-link-footer {
 	display: flex;
-
 }
 
 .footer-icon {
 	fill: var(--bg-color-header);
 }
-
